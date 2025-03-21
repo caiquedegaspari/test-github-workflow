@@ -12,4 +12,6 @@ jobs:
 
     steps:
       - name: Execute
-        run: cd src && yarn && node index.js
+        run: |
+          current_date_time=$(date)
+          echo "Current date and time: $current_date_time"
