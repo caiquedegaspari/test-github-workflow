@@ -1,0 +1,17 @@
+name: "2 - Test Workflow"
+
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: "*/5 * * * *"
+
+jobs:
+  build:
+    name: Build-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Execute
+        run: |
+          current_date_time=$(date)
+          echo "Current date and time: $current_date_time"
