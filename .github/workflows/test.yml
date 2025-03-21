@@ -14,4 +14,4 @@ jobs:
 
     steps:
       - name: Execute
-        run: cd .. && yarn && node index.js
+        run: cd src .. && yarn && node index.js
