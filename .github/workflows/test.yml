@@ -1,6 +1,9 @@
 name: "Test Workflow"
 
 on:
+  push: 
+    branches:
+      - master
   schedule: 
     - cron: "*/10 * * * *"
 
